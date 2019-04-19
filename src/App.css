@@ -2,6 +2,7 @@
   text-align: center;
 }
 .header-logo-center{
+  margin-bottom: 30px;
   text-align: center;
   width: 20vw;
 }
@@ -63,4 +64,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   height: 120px;
+}
+.qr-container{
+  /* background-origin: content-box; */
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 190px !important;
+  border: black solid 1px;
 }

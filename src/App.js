@@ -11,6 +11,10 @@ import pharma from './assets/pharma.png'
 import ced from './assets/ced.png'
 import tameer from './assets/tameer.png'
 import fm91 from './assets/fm91.png'
+import signature1 from './assets/signature1.png'
+import signature2 from './assets/signature2.png'
+import qrcode from './assets/qrcode.png'
+import background from './assets/Background.jpg';
 
 class App extends Component {
   render() {
@@ -20,7 +24,7 @@ class App extends Component {
           Hello
         </header> */}
         <div>
-          <div className="cert-border">
+          <div style={{backgroundImage: `url(${background})`, backgroundSize: 'cover'}} className="cert-border">
             <Container>
               <Row>
                 <Col md={3} xs={4} sm={4}>
@@ -110,7 +114,46 @@ class App extends Component {
 
               </Row>
 
-              
+              <Row style={{marginTop:'50px'}}>
+                <Col md={4} xs={12} sm={12}>
+                  <div>
+                    <div className="participant-placeholder text-center">
+                    <img src={signature1}/>
+                  </div>
+                  <div className="text-center">
+                    <h2>Muhammad Taha Rafique</h2>
+                    <p>Manager IBA Entrepreneurship Society</p>
+                   </div>
+                  </div>
+                </Col>
+                <Hidden sm xs>
+                  <Col md={1} sm={0} xs={0}>
+
+                  </Col>
+                </Hidden>
+                <Col style={{backgroundImage: `url(${qrcode})`}} className="qr-container" md={2} xs={12} sm={12} >
+                  <div>
+                    
+                  </div>
+                </Col >
+                <Hidden sm xs>
+                  <Col md={1} sm={0} xs={0}>
+
+                  </Col>
+                </Hidden>
+                <Col md={4} xs={12} sm={12}>
+                  <div>
+                    <div className="participant-placeholder text-center">
+                    <img src={signature2}/>
+                  </div>
+                  <div className="text-center">
+                    <h2>Dr. Shahid Qureshi</h2>
+                    <p>Director IBA Center for Entrepreneurial Development</p>
+                   </div>
+                  </div>
+                </Col>
+              </Row>
+
             </Container>
             </div>
           </div>
