@@ -131,11 +131,15 @@ class App extends Component {
 
                   </Col>
                 </Hidden>
+
+                <Hidden sm xs>
                 <Col style={{backgroundImage: `url(${qrcode})`}} className="qr-container" md={2} xs={12} sm={12} >
                   <div>
                     
                   </div>
                 </Col >
+                </Hidden>
+
                 <Hidden sm xs>
                   <Col md={1} sm={0} xs={0}>
 
@@ -152,6 +156,14 @@ class App extends Component {
                    </div>
                   </div>
                 </Col>
+
+                <Visible sm xs>
+                <Col style={{backgroundImage: `url(${qrcode})`}} className="qr-container" md={2} xs={12} sm={12} >
+                  <div>
+                    
+                  </div>
+                </Col >
+                </Visible>
               </Row>
 
             </Container>
