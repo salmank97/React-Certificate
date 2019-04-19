@@ -25,25 +25,25 @@ class App extends Component {
         </header> */}
         <div>
           <div style={{backgroundImage: `url(${background})`, backgroundSize: 'cover'}} className="cert-border">
-            <Container>
+            <Container fluid >
               <Row>
-                <Col md={3} xs={4} sm={4}>
+                <Col xl={3} lg={3} md={3} xs={4} sm={4}>
                   <img className="header-logo-left" src={IBALogo} />
                 </Col>
                 <Hidden sm xs>
-                  <Col md={1} sm={0} xs={0}>
+                  <Col xl={1} lg={1} md={1} sm={0} xs={0}>
 
                   </Col>
                 </Hidden>
-                <Col className="text-center" md={4} xs={4} sm={4}>
+                <Col className="text-center" xl={4} lg={4} md={4} xs={4} sm={4}>
                   <img className="header-logo-center" src={inventLogo} />
                 </Col>
                 <Hidden sm xs>
-                  <Col md={1} sm={0} xs={0}>
+                  <Col xl={1} lg={1} md={1} sm={0} xs={0}>
 
                   </Col>
                 </Hidden>
-                <Col md={3} xs={4} sm={4}>
+                <Col xl={3} lg={3} md={3} xs={4} sm={4}>
                   <img className="header-logo-right" src={ibaesLogo} />
                 </Col>
               </Row>
@@ -90,7 +90,7 @@ class App extends Component {
               <p className="text-center">At IBA Karachi from 19th-21st April 2019</p>
             </div>
             <div>
-            <Container style={{marginTop:'5vh'}} >
+            <Container fluid style={{marginTop:'5vh'}} >
               <Row>
 
                 <Col style={{backgroundImage: `url(${furor})`}} className="partner-logo" md={2} xs={4} sm={4}>
